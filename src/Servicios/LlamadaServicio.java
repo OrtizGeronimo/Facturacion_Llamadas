@@ -64,7 +64,7 @@ public class LlamadaServicio {
             if (!dia.equalsIgnoreCase("Saturday") && !dia.equalsIgnoreCase("Sunday") && fecha.getHour() >= 8 && fecha.getHour() < 20){
                 l.setCosto(this.truncar(0.20*duracion));
             } else {
-                l.setCosto(this.truncar(0.20*duracion));
+                l.setCosto(this.truncar(0.10*duracion));
             }
         } else {
             if (!dia.equalsIgnoreCase("Saturday") && !dia.equalsIgnoreCase("Sunday") && fecha.getHour() >= 8 && fecha.getHour() < 20){
