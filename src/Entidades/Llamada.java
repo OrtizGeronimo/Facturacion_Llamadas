@@ -53,7 +53,7 @@ public class Llamada {
     @Override
     public String toString() {
         return "Llamada{" +
-                " Costo total: " + costo +
+                " Costo total individual: " + costo +
                 " - Duracion: " + duracion +
                 " - Fecha: " + fecha +
                  " - " + tipo.toString() +

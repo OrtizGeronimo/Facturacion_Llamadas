@@ -61,14 +61,12 @@ public class LlamadaServicio {
         LocalDateTime fecha = l.getFecha();
         String dia = fecha.getDayOfWeek().toString();
         if (tipo.getNombreTipoLlamada().equalsIgnoreCase("Local")){
-
             if (!dia.equalsIgnoreCase("Saturday") && !dia.equalsIgnoreCase("Sunday") && fecha.getHour() >= 8 && fecha.getHour() < 20){
                 l.setCosto(this.truncar(0.20*duracion));
             } else {
                 l.setCosto(this.truncar(0.20*duracion));
             }
         } else {
-            System.out.println(dia);
             if (!dia.equalsIgnoreCase("Saturday") && !dia.equalsIgnoreCase("Sunday") && fecha.getHour() >= 8 && fecha.getHour() < 20){
                 l.setCosto(truncar(l.getTipo().getPais().getCostoExtra() + (0.20 * duracion)));
             } else {
